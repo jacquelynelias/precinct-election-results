@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<div class="container" id="app">
+    <nav class="navbar dark">
+        <a class="navbar-brand" href="#"><img src="./assets/ajc_white.svg"></a>
+    </nav>
+    <div class="row main">
+        <div class="col">
+            <div class="row title">
+                <h1>How did your county vote?</h1>
+                <h3>It's election day, and the results are coming in. 
+                    Stay tuned here to see how your county votes. 
+                    The Atlanta Journal-Constitution will be updating 
+                    throughout the night as results come in.
+                </h3>
+            </div>
+            <div class="row form">
+                <form onsubmit="changeCounty()"> 
+                    <div class="form-group col-md-4">
+                        <label for="inputCounty">County</label>
+                        <select id="inputCounty" class="form-control">
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Go</button>
+                </form>
+
+            </div>
+            <div class="row county-title"></div>
+            <div class="row output">
+                <div class="col">
+                    <table class="precincts">
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+        One of three columns
+        </div>
+        <div class="col-sm">
+        One of three columns
+        </div>
+        <div class="col-sm">
+        One of three columns
+        </div>
+    </div>
+</div>
+</body>
+</html>
