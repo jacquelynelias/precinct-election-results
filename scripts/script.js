@@ -3,9 +3,9 @@ var data_url = './data/votes_data.csv' //url of data file
 //var data = {"counties":[]}
 var result = {}
 var headers = [
-    {"label":"District", "value":"ajc_precinct"},
+    {"label":"Precinct", "value":"ajc_precinct"},
     {"label":"Results", "value":"votes"},
-    {"label":"Total", "value":"total"}
+    {"label":"Total Votes", "value":"total"}
 ]
 var lineWidth = 8;
 
@@ -126,7 +126,7 @@ var getResult = function(num) {
                             total = total + parseInt(county.precincts[l][candidates[n]+'_votes'])
 
                         }
-                        body = body + total
+                        body = body + wCommas(total)
                         
                     } else if (headers[h].value === 'votes') {
                         body = body + "<div class='dem'><div class='dem-text'><h4>"+toProperCase(candidates[0])+":</h4> <p>" + (county.precincts[l][candidates[0] +'_votes'] ? wCommas(county.precincts[l][candidates[0] +'_votes'].split(".")[0]) : 'N/A') + "</p></div><div class='dem-rect' style='width:" + parseInt(county.precincts[l][candidates[0] +'_votes'])/lineWidth+"px'></div></div>"
