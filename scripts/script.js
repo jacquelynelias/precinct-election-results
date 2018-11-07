@@ -1,7 +1,9 @@
 
 var data_url = './data/votes_concat.csv' //url of data file
+var turnout_url = './data/turnout_by_county.csv'
 //var data = {"counties":[]}
 var result = {}
+var turnout = {}
 var headers = [
     {"label":"Precinct", "value":"Precinct"},
     {"label":"Results", "value":"votes"},
@@ -13,7 +15,7 @@ var window_width = $(window).width();
 if( window_width <= 480 ){
   lineWidth = 1;
 } else {
-    lineWidth = 2;
+    lineWidth = 2.3;
 }
 
 var candidates = ["abrams", "kemp", "metz"]; //put names of candidates here
@@ -180,6 +182,13 @@ var getCounty = function(fips) {
 
 var styleTable = function() {
     var table = $('#table-results')
+    var window_width = $(window).width();
+    var w = ''
+    if (window_width <= 480) {
+        w = "20%"
+    } else {
+        w = "30%"
+    }
     table.DataTable( {
         "columnDefs": [{
             "targets":[1],
@@ -188,7 +197,7 @@ var styleTable = function() {
         }],
         "autoWidth": false,
         "columns": [
-            { "type": "string", "width":"20%"},
+            { "type": "string", "width": w},
             { "type": "num-fmt", "className":"dt-body-left"},
             { "type": "num-fmt" }
         ]
@@ -228,6 +237,22 @@ $(document).ready(function() {
             document.body.style.cursor='default';
         }
     });
+    /*
+    $.ajax({
+        beforeSend: function() {
+            document.body.style.cursor='wait';
+        },
+        type: "GET",
+        url: data_url,
+        dataType: "text",
+        success: function(stuff) { 
+            data = processData(stuff); 
+            updateSelect(data)
+            result = data
+            document.body.style.cursor='default';
+        }
+    });
+    */
     $("#county-select").submit(function(e) {
         e.preventDefault()
         $(".county-title").html("")
@@ -247,7 +272,7 @@ $(document).ready(function() {
         if( window_width <= 480 ){
             lineWidth = 1;
           } else {
-              lineWidth = 2;
+              lineWidth = 2.3;
           }
           
     });
