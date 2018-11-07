@@ -7,7 +7,14 @@ var headers = [
     {"label":"Results", "value":"votes"},
     {"label":"Total Votes", "value":"total"}
 ]
-var lineWidth = 8;
+var lineWidth;
+
+var window_width = $(window).width();
+if( window_width <= 480 ){
+  lineWidth = 1;
+} else {
+    lineWidth = 2;
+}
 
 var candidates = ["abrams", "kemp", "metz"]; //put names of candidates here
 /*
@@ -22,6 +29,8 @@ data = {
 ]
 }
 */
+
+
 
 
 var updateSelect = function(data) {
@@ -67,11 +76,17 @@ var arrayToObject = function(headers, input) {
         county['name'] = input[item][1];
         //county['fips'] = input[item][11]
         for (var m in headers) {
-            var ignore = [5]
+            var ignore = [5] //Change with headers to ignore
             if (!ignore.includes(parseInt(m))) {
                 temp[headers[m]] = input[item][m]
             }
         }
+        var total = 0;
+        for (var n in candidates) {
+            total = total + parseInt(temp[candidates[n]+'_votes'])
+
+        }
+        temp['total'] = total
 
         var index = countyExist(data.counties, county['name'])
         if (index != -1) {
@@ -121,17 +136,15 @@ var getResult = function(num) {
                     } else if (headers[h].value === 'total') {
                         var total = 0;
                         for (var n in candidates) {
-                            console.log(candidates[n])
-                            console.log(county.precincts[l][candidates[n]])
                             total = total + parseInt(county.precincts[l][candidates[n]+'_votes'])
 
                         }
                         body = body + wCommas(total)
                         
                     } else if (headers[h].value === 'votes') {
-                        body = body + "<div class='dem'><div class='dem-text'><h4>"+toProperCase(candidates[0])+":</h4> <p>" + (county.precincts[l][candidates[0] +'_votes'] ? wCommas(county.precincts[l][candidates[0] +'_votes'].split(".")[0]) : 'N/A') + "</p></div><div class='dem-rect' style='width:" + parseInt(county.precincts[l][candidates[0] +'_votes'])/lineWidth+"px'></div></div>"
-                        body = body + "<div class='rep'><div class='rep-text'><h4>"+toProperCase(candidates[1])+":</h4> <p>" + (county.precincts[l][candidates[1] +'_votes'] ? wCommas(county.precincts[l][candidates[1] +'_votes'].split(".")[0]) : 'N/A') + "</p></div><div class='rep-rect' style='width:" +parseInt(county.precincts[l][candidates[1] +'_votes'])/lineWidth +"px'></div></div></div>"
-                        body = body + "<div class='lib'><div class='lib-text'><h4>"+toProperCase(candidates[2])+":</h4> <p>" + (county.precincts[l][candidates[2] +'_votes'] ? wCommas(county.precincts[l][candidates[2] +'_votes'].split(".")[0]) : 'N/A') + "</p></div><div class='lib-rect' style='width:" +parseInt(county.precincts[l][candidates[2] +'_votes'])/lineWidth +"px'></div></div></div>"
+                        body = body + "<div class='dem'><div class='dem-text'><h4>"+toProperCase(candidates[0])+":</h4> <p>" + (county.precincts[l][candidates[0] +'_votes'] ? (wCommas(county.precincts[l][candidates[0] +'_votes'].split(".")[0]) + " (" + (((parseInt(county.precincts[l][candidates[0] +'_votes']))/(parseInt(county.precincts[l]['total']))*100).toFixed(1))+"%)")  : 'N/A') + "</p></div><div class='dem-rect' style='width:" + (((parseInt(county.precincts[l][candidates[0] +'_votes']))/(parseInt(county.precincts[l]['total']))*100).toFixed(1))*lineWidth+"px'></div></div>"
+                        body = body + "<div class='rep'><div class='rep-text'><h4>"+toProperCase(candidates[1])+":</h4> <p>" + (county.precincts[l][candidates[1] +'_votes'] ? (wCommas(county.precincts[l][candidates[1] +'_votes'].split(".")[0]) + " (" + (((parseInt(county.precincts[l][candidates[1] +'_votes']))/(parseInt(county.precincts[l]['total']))*100).toFixed(1))+"%)") : 'N/A') + "</p></div><div class='rep-rect' style='width:" +(((parseInt(county.precincts[l][candidates[1] +'_votes']))/(parseInt(county.precincts[l]['total']))*100).toFixed(1))*lineWidth +"px'></div></div></div>"
+                        body = body + "<div class='lib'><div class='lib-text'><h4>"+toProperCase(candidates[2])+":</h4> <p>" + (county.precincts[l][candidates[2] +'_votes'] ? (wCommas(county.precincts[l][candidates[2] +'_votes'].split(".")[0]) + " (" + (((parseInt(county.precincts[l][candidates[2] +'_votes']))/(parseInt(county.precincts[l]['total']))*100).toFixed(1))+"%)") : 'N/A') + "</p></div><div class='lib-rect' style='width:" +(((parseInt(county.precincts[l][candidates[2] +'_votes']))/(parseInt(county.precincts[l]['total']))*100).toFixed(1))*lineWidth +"px'></div></div></div>"
 
                     } else if (headers[h].value === 'f') {
                         
@@ -175,7 +188,7 @@ var styleTable = function() {
         }],
         "autoWidth": false,
         "columns": [
-            { "type": "string" },
+            { "type": "string", "width":"20%"},
             { "type": "num-fmt", "className":"dt-body-left"},
             { "type": "num-fmt" }
         ]
@@ -230,5 +243,13 @@ $(document).ready(function() {
 
     })
 
+    $( window ).resize(function() {
+        if( window_width <= 480 ){
+            lineWidth = 1;
+          } else {
+              lineWidth = 2;
+          }
+          
+    });
 });
 //Adds listener for county select button
