@@ -17,6 +17,11 @@
         font-size:14px;
     }
 
+    .search {
+        margin-left:5px;
+        margin-right: 5px;
+    }
+
     #table-results_length {
         display:none;
     }
