@@ -49,6 +49,11 @@ var processData = function(data) {
     return csvToArray(data)
 }
 
+//Calls functions to take data from csv to an object
+var processDataTurnout = function(data) {
+    return csvToArrayTurnout(data)
+}
+
 //Processes from the csv to an array of headers and items
 var csvToArray = function(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
@@ -68,6 +73,67 @@ var csvToArray = function(allText) {
     }    
     return arrayToObject(headers, lines)
 }
+
+//Processes from the csv to an array of headers and items for turnout
+var csvToArrayTurnout = function(allText) {
+    var allTextLines = allText.split(/\r\n|\n/);
+    var headers = allTextLines[0].split(',');
+    var lines = [];
+
+    for (var i=1; i<allTextLines.length; i++) {
+        var data = allTextLines[i].split(',');
+        if (data.length == headers.length) {
+
+            var tarr = [];
+            for (var j=0; j<headers.length; j++) {
+                tarr.push(data[j]);
+            }
+            lines.push(tarr);
+        }
+    }    
+    return arrayToObjectTurnout(headers, lines)
+}
+
+
+//Processes from this array to an object for turnout
+var arrayToObjectTurnout = function(headers, input) {
+    var data = {"counties":[]} 
+    for (var item in input) {
+        var temp = {}
+        var county = {}
+        county['name'] = input[item][0];
+        for (var m in headers) {
+            var ignore = [0] //Change with headers to ignore
+            if (!ignore.includes(parseInt(m))) {
+                temp[headers[m]] = input[item][m]
+            }
+        }
+        
+        var index = countyExist(data.counties, county['name'])
+        if (index != -1) {
+          data.counties[index]['results'].push(temp);
+        } else {
+            county['results'] = [] 
+            county['results'].push(temp);
+            data.counties.push(county)
+        }
+        
+
+    }
+    return data
+}
+
+var getTotal = function(str, temp) {
+    console.log(temp)
+    var total = 0;
+    for (var n in candidates) {
+        total = total + parseInt(temp[candidates[n]+"_"+str])
+
+    }
+    return total
+
+}
+
 
 //Processes from this array to an object
 var arrayToObject = function(headers, input) {
@@ -120,7 +186,24 @@ var getResult = function(num) {
     var county;
     if (index >= 0) {
         county = result.counties[index]
-        $(".county-title").html("<h1>" + toProperCase(county.name) + " COUNTY</h1>")
+        $(".county-title").html("<h1>" + toProperCase(county.name.replace("_"," ")) + " COUNTY</h1>")
+        $(".county-title").append("<p><i>Please note these are only preliminary results.</i></p>")
+        var index = countyExist(turnout.counties,num)
+        var county_results = turnout.counties[index].results[0]
+        console.log(county_results)
+        if (county_results) {
+            var c = '<div class="row county-results"><div class="col-xs-6 col-md-3"><h4>Turnout</h4><p>'+
+                    wCommas(county_results.total)+' ('+(county_results.total/county_results.registered*100).toFixed(1)+'%)</p></div><div class="col-xs-6 col-md-3"><h4>Abrams</h4><p>'+
+                    wCommas(county_results.abrams_votes)+'</p></div>';
+            c = c + '<div class="col-xs-6 col-md-3"><h4>Kemp</h4><p>' + wCommas(county_results.kemp_votes)+'</p></div>' 
+            c = c + '<div class="col-xs-6 col-md-3"><h4>Metz</h4><p>' + wCommas(county_results.metz_votes)+'</p></div>'       
+            c = c + '<div class="col-xs-6 col-md-3"><h4>Mail Ballots</h4><p>' + wCommas(getTotal('absentee', county_results))+'</p></div>'
+            c = c + '<div class="col-xs-6 col-md-3"><h4>Early Voting</h4><p>' + wCommas(getTotal('advance', county_results))+'</p></div>'
+            c = c + '<div class="col-xs-6 col-md-3"><h4>Provisional</h4><p>' + wCommas(getTotal('provisional', county_results))+'</p></div>'
+            c = c + '<div class="col-xs-6 col-md-3"><h4>Election Day</h4><p>' + wCommas(getTotal('election', county_results))+'</p></div>'
+            c = c + '</div>'
+            $(".county-title").append(c)
+        }
         if (county.precincts.length > 0) {
             var body = "<table id='table-results' class='table table-striped table-hover'><thead>"
             for (var h in headers) {
@@ -233,22 +316,21 @@ $(document).ready(function() {
             document.body.style.cursor='default';
         }
     });
-    /*
+    
     $.ajax({
         beforeSend: function() {
             document.body.style.cursor='wait';
         },
         type: "GET",
-        url: data_url,
+        url: turnout_url,
         dataType: "text",
         success: function(stuff) { 
-            data = processData(stuff); 
-            updateSelect(data)
-            result = data
+            data = processDataTurnout(stuff); 
+            turnout = data
             document.body.style.cursor='default';
         }
     });
-    */
+    
     $("#county-select").submit(function(e) {
         e.preventDefault()
         $(".county-title").html("")

@@ -17,6 +17,17 @@ nav {
     padding-left: 100px;
     padding-right:100px;
 
+
+}
+
+.county-results {
+    padding-bottom:20px;
+}
+
+.county-results h4 {
+    font-weight:bold;
+    color: #ff7300;
+
 }
 
 .title h1 {
@@ -81,6 +92,7 @@ nav {
 
   .county-title h1 {
       font-size:40px;
+      color: #7e7e7e;
   }
 
   .title p {
