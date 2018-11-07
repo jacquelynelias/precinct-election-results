@@ -2,18 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Plotly library -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-    <!-- Scripts -->
+    <!-- Bootstrap JavaScript Library-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- Datatables Library -->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+    
+    <!-- Custom scripts -->
     <script src="scripts/script.js"></script>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles-sm.css">
 </head>
 <body>
 
@@ -24,22 +33,23 @@
     <div class="row main">
         <div class="col">
             <div class="row title">
-                <h1>How did your county vote?</h1>
-                <h3>It's election day, and the results are coming in. 
+                    <div class="subtitle"><h3 class="circle">Live Updates</h3></div>
+                <div class="t"><h1>Georgia Governor Race</h1></div>
+                <p class="edit-date"><b>Last Updated:</b> November 6, 2018</p>
+                <h5>It's election day, and the results are coming in. 
                     Stay tuned here to see how your county votes. 
                     The Atlanta Journal-Constitution will be updating 
                     throughout the night as results come in.
-                </h3>
+                </h5>
+                <h3>How did your county vote?</h3>
             </div>
-            <div class="row form">
+            <div class="row form-inline">
                 <form id="county-select" action=''> 
-                    <div class="form-group col-md-4">
-                        <label for="inputCounty">County</label>
-                        <select id="inputCounty" class="form-control">
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <input class="submit btn btn-primary" type="submit" value="Go"/>
+                    <div class="form-group">
+                            <select id="inputCounty" class="form-control">
+                                <option selected disabled>County</option>
+                            </select>
+                        <input class="submit btn btn-success" disabled type="submit" value="Go" aria-disabled="true"/>
                 </form>
 
             </div>
@@ -48,22 +58,13 @@
                     <div class="row county-title">
                         
                     </div>
-                    <div class="row precincts">
+                    <div class="row precincts table-responsive">
 
 
                     </div>
                 </div>
 
             </div>
-        </div>
-        <div class="col-sm">
-        One of three columns
-        </div>
-        <div class="col-sm">
-        One of three columns
-        </div>
-        <div class="col-sm">
-        One of three columns
         </div>
     </div>
 </div>

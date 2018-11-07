@@ -1,0 +1,73 @@
+@media only screen and (max-width: 600px) {
+    .title {
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .title h1 {
+        font-size:18px;
+        margin-bottom:5px;
+    }
+
+    .title h3 {
+        font-size:14px;
+    }
+
+    #table-results_length {
+        display:none;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    .circle {
+        width:100px;
+    }
+
+    #inputCounty {
+        margin-bottom:10px;
+
+    }
+    .form-inline .form-control {
+        width:100%;
+    }
+    .table-responsive {
+        border:none;
+        width:100%;
+    }
+
+    .pagination>li>a, .pagination>li>span {
+        padding: 3px 6px;
+        font-size: 10px;
+    }
+
+    .btn {
+        width:80px;
+    }
+
+    .title p {
+        font-size:10px;
+    }
+    .title h5 {
+        font-size:12px;
+    }
+
+    .navbar-brand img {
+        padding-left:10px;
+    }
+
+    .county-title h1 {
+        font-size:18px;
+    }
+
+    #table-results_filter {
+        float:left;
+    }
+
+    .main {
+        margin-top:20%;
+        margin-left:10px;
+        margin-right:10px;
+    }
+}

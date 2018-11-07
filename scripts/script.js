@@ -4,10 +4,12 @@ var data_url = './data/votes_data.csv' //url of data file
 var result = {}
 var headers = [
     {"label":"District", "value":"ajc_precinct"},
-    {"label":"Democratic", "value":"dem_votes"},
-    {"label":"Republican", "value":"rep_votes"},
-    {"label":"Average Income", "value":"avg_income"}
+    {"label":"Results", "value":"votes"},
+    {"label":"Total", "value":"total"}
 ]
+var lineWidth = 8;
+
+var candidates = ["bottoms", "norwood", "woolard", "mitchell", "wrightson", "eaves"]; //put names of candidates here
 /*
 data = {
     counties: [
@@ -24,11 +26,9 @@ data = {
 
 var updateSelect = function(data) {
     var select = document.getElementById('inputCounty')
-    console.log(this.data)
     for (var county in data["counties"]) {
-        console.log(county)
         var opt = document.createElement('option');
-        opt.value = data.counties[county].fips;
+        opt.value = data.counties[county].name;
         opt.innerHTML = data.counties[county].name;
         select.appendChild(opt)
     }
@@ -64,16 +64,16 @@ var arrayToObject = function(headers, input) {
     for (var item in input) {
         var temp = {}
         var county = {}
-        county['name'] = input[item][10]
-        county['fips'] = input[item][11]
+        county['name'] = input[item][3]
+        //county['fips'] = input[item][11]
         for (var m in headers) {
-            var ignore = [9,10,11,15,19]
+            var ignore = [7,15,19,20]
             if (!ignore.includes(parseInt(m))) {
                 temp[headers[m]] = input[item][m]
             }
         }
 
-        var index = countyExist(data.counties, county['fips'])
+        var index = countyExist(data.counties, county['name'])
         if (index != -1) {
             data.counties[index]['precincts'].push(temp)
         } else {
@@ -91,8 +91,9 @@ var countyExist = function(obj, county) {
     var result
     if (obj) {
         result = obj.findIndex(function(element) {
-            return element.fips == county
+            return element.name == county
         })
+        
     }
     return result
 }
@@ -100,37 +101,57 @@ var countyExist = function(obj, county) {
 var getResult = function(num) {
     var index = countyExist(result.counties,num)
     var county;
-    if (index) {
+    if (index >= 0) {
         county = result.counties[index]
-        console.log("hi" + index)
-        console.log("You are viewing the results for " + toProperCase(county.name))
-        $(".county-title").html("You are viewing the results for " + toProperCase(county.name) + " County.")
+        $(".county-title").html("<h1>" + toProperCase(county.name) + " County</h1>")
         if (county.precincts.length > 0) {
-            console.log("there are results")
-            $(".precincts").append("<table><thead>")
+            var body = "<table id='table-results' class='table table-striped table-hover'><thead>"
             for (var h in headers) {
-                $(".precincts").append("<td>" + headers[h].label + "</td>")
+               body = body +"<td>" + headers[h].label + "</td>"
             }
-            $(".precincts").append("</thead><tbody>")
-            var body = "<tbody>"
+            body = body + "</thead>"
+            body = body + "<tbody>"
             for (var l in county.precincts) {
                 body = body + "<tr>"
                 for (var h in headers) {
                     body = body + "<td>"
-                    body = body + county.precincts[l][headers[h].value]
+                    if(headers[h].value === 'ajc_precinct') {
+                        body = body + toProperCase(county.precincts[l][headers[h].value])
+
+                    } else if (headers[h].value === 'total') {
+                        var total = 0;
+                        for (var n in candidates) {
+                            console.log(candidates[n])
+                            console.log(county.precincts[l][candidates[n]])
+                            total = total + parseInt(county.precincts[l][candidates[n]+'_votes'])
+
+                        }
+                        body = body + total
+                        
+                    } else if (headers[h].value === 'votes') {
+                        body = body + "<div class='dem'><div class='dem-text'><h4>"+toProperCase(candidates[0])+":</h4> <p>" + (county.precincts[l][candidates[0] +'_votes'] ? wCommas(county.precincts[l][candidates[0] +'_votes'].split(".")[0]) : 'N/A') + "</p></div><div class='dem-rect' style='width:" + parseInt(county.precincts[l][candidates[0] +'_votes'])/lineWidth+"px'></div></div>"
+                        body = body + "<div class='rep'><div class='rep-text'><h4>"+toProperCase(candidates[1])+":</h4> <p>" + (county.precincts[l][candidates[1] +'_votes'] ? wCommas(county.precincts[l][candidates[1] +'_votes'].split(".")[0]) : 'N/A') + "</p></div><div class='rep-rect' style='width:" +parseInt(county.precincts[l][candidates[1] +'_votes'])/lineWidth +"px'></div></div></div>"
+                        body = body + "<div class='lib'><div class='lib-text'><h4>"+toProperCase(candidates[2])+":</h4> <p>" + (county.precincts[l][candidates[2] +'_votes'] ? wCommas(county.precincts[l][candidates[2] +'_votes'].split(".")[0]) : 'N/A') + "</p></div><div class='lib-rect' style='width:" +parseInt(county.precincts[l][candidates[2] +'_votes'])/lineWidth +"px'></div></div></div>"
+
+                    } else if (headers[h].value === 'f') {
+                        
+                    } else {
+                        body = body + county.precincts[l][headers[h].value]
+                    }
+                    
                     body = body + "</td>"
                 }
                 body = body + "</tr>"
             }
             body = body + "</tbody></table>"
             $(".precincts").append(body)
+            $('#table-results').DataTable();
         } else {
             $(".county-title").html("Result for this " + county.name +" are not available yet")
         }
     } else {
         $(".county-title").html("Result for this county cannot be found")
     }
-    console.log(county)
     //$("#county-title").innerHTML = ""
 }
 
@@ -141,6 +162,21 @@ var getCounty = function(fips) {
         } 
     }
 }
+
+var styleTable = function() {
+    var table = $('#table-results')
+    table.DataTable( {
+        "columns": [
+            { "type": "string" },
+            { "type": "num-fmt", "className":"dt-body-left"},
+            { "type": "num-fmt" }
+        ]
+    });    
+}
+
+var wCommas = function(str) {
+    return str.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+};
 
 var toProperCase = function(str) {
     return str.replace(/\w\S*/g, function(txt) {
@@ -173,7 +209,12 @@ $(document).ready(function() {
         $( "#county-select option:selected" ).val();
         var value = $("#county-select option:selected").val();
         getResult(value)
-        console.log("FIPS " + value)
+    })
+
+    $("#inputCounty").change(function(e) {
+        e.preventDefault();
+        $("input[type=submit]").removeAttr("disabled");
+
     })
 
 });

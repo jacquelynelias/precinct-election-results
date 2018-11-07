@@ -13,6 +13,19 @@ nav {
     padding-left: 50px;
 }
 
+.title {
+    padding-left: 100px;
+    padding-right:100px;
+
+}
+
+.title h1 {
+    font-size:40px;
+}
+
+.container {
+    width:100%;
+}
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -21,9 +34,156 @@ nav {
     color: #2c3e50;
     margin: 0px;
     padding:0px;
-    width:100%;
   }
 
+  #table-results_filter {
+      float:right;
+  }
+
+
+
+  .form-inline .form-control {
+      width:300px;
+  }
+
+  #table-results_filter > label > input  {
+      width:auto;
+      text-align: left;
+      
+  }
+
+  #table-results_wrapper > div:nth-child(1)
+
+  #table-results_length > label > select {
+      width:auto;
+  }
+
+  #table-results_length {
+      text-align:left;
+  }
+
+  .edit-date {
+      color: #CC0000;
+  }
+
+  #county-select {
+      margin-bottom:10px;
+  }
+
+  .county-title h1 {
+      font-size:40px;
+  }
+
+  .title p {
+      display:inline-block;
+  }
+
+  #inputCounty {
+      margin-right:20px;
+  }
+  
+  .circle {
+    background-color: #e5c100;
+    color: white;
+    border-radius:20px;
+    text-align:center;
+    font-size:18px;
+    padding:7px;
+    width:150px;
+    margin:auto;
+
+
+}
+
+.subtitle {
+    margin:auto;
+}
+
+  .dem .rep .lib{
+    padding-bottom:20px;
+    width:100px;
+  }
+
+  .dem h4 {
+    color:#536DAE;
+    display:inline-block;
+    margin-bottom:0;
+  }
+
+  .rep h4 {
+      color: #C92125;
+      display:inline-block;
+      margin-bottom:0;
+  }
+
+  .lib h4 {
+      display:inline-block;
+      color: #50AF71;
+      margin-bottom:0;
+  }
+
+  .lib p {
+      display:inline-block;
+      margin-bottom:0;
+  }
+
+  .rep p {
+    display:inline-block;
+    margin-bottom:0;
+  }
+
+  table {
+      text-align:left;
+  }
+
+  .dem p {
+    display:inline-block;
+    margin-bottom:0;
+  }
+
+  .dem-rect {
+    background-color:#536DAE;
+    display:inline-block;
+    height:10px;
+    
+
+  }
+
+  .row {
+      margin-right: 0px;
+      margin-left: 0px;
+  }
+
+  .table-responsive {
+      width: 100%;
+      border: none;
+  }
+
+  .lib-rect {
+    background-color:#50AF71;
+    display:inline-block;
+    height:10px;
+    
+
+  }
+
+
+
+  .rep-rect {
+    background-color: #C92125;
+    display:inline-block;
+    height:10px;
+
+  }
   .main {
-      margin:50px;
+      margin:100px;
+  }
+
+  #table-results {
+      width:100%
+  }
+
+  br {
+      height:5px;
+
   }
