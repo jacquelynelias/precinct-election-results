@@ -145,7 +145,7 @@ var getResult = function(num) {
             }
             body = body + "</tbody></table>"
             $(".precincts").append(body)
-            $('#table-results').DataTable();
+            styleTable()
         } else {
             $(".county-title").html("Result for this " + county.name +" are not available yet")
         }
@@ -166,6 +166,11 @@ var getCounty = function(fips) {
 var styleTable = function() {
     var table = $('#table-results')
     table.DataTable( {
+        "columnDefs": [{
+            "targets":[1],
+            "orderable": false
+
+        }],
         "columns": [
             { "type": "string" },
             { "type": "num-fmt", "className":"dt-body-left"},
