@@ -171,6 +171,7 @@ var styleTable = function() {
             "orderable": false
 
         }],
+        "autoWidth": false,
         "columns": [
             { "type": "string" },
             { "type": "num-fmt", "className":"dt-body-left"},
