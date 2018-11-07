@@ -66,12 +66,17 @@ nav {
       text-align:left;
   }
 
-  .edit-date {
-      color: #CC0000;
+  #footer {
+      font-size:10px;
+      float:right;
   }
 
+.edit-date {
+    color:#cc0000;
+}
+
   #county-select {
-      margin-bottom:10px;
+      margin-bottom:0px;
   }
 
   .county-title h1 {
@@ -79,7 +84,15 @@ nav {
   }
 
   .title p {
-      display:inline-block;
+      display:block;
+      margin-bottom:0px;
+      padding-bottom:0px;
+      margin-top:0px;
+  }
+
+  .byline p {
+      margin-bottom:0px;
+      padding-bottom:0px;
   }
 
   #inputCounty {

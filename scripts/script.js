@@ -146,6 +146,8 @@ var getResult = function(num) {
             body = body + "</tbody></table>"
             $(".precincts").append(body)
             styleTable()
+            $(".precincts").append("<p id='footer'>Data is from the Georgia Secretary of State</p>")
+            
         } else {
             $(".county-title").html("Result for this " + county.name +" are not available yet")
         }
