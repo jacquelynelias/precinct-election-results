@@ -1,15 +1,15 @@
 
-var data_url = './data/votes_data.csv' //url of data file
+var data_url = './data/votes_concat.csv' //url of data file
 //var data = {"counties":[]}
 var result = {}
 var headers = [
-    {"label":"Precinct", "value":"ajc_precinct"},
+    {"label":"Precinct", "value":"Precinct"},
     {"label":"Results", "value":"votes"},
     {"label":"Total Votes", "value":"total"}
 ]
 var lineWidth = 8;
 
-var candidates = ["bottoms", "norwood", "woolard", "mitchell", "wrightson", "eaves"]; //put names of candidates here
+var candidates = ["abrams", "kemp", "metz"]; //put names of candidates here
 /*
 data = {
     counties: [
@@ -64,10 +64,10 @@ var arrayToObject = function(headers, input) {
     for (var item in input) {
         var temp = {}
         var county = {}
-        county['name'] = input[item][3]
+        county['name'] = input[item][1];
         //county['fips'] = input[item][11]
         for (var m in headers) {
-            var ignore = [7,15,19,20]
+            var ignore = [5]
             if (!ignore.includes(parseInt(m))) {
                 temp[headers[m]] = input[item][m]
             }
@@ -75,10 +75,10 @@ var arrayToObject = function(headers, input) {
 
         var index = countyExist(data.counties, county['name'])
         if (index != -1) {
-            data.counties[index]['precincts'].push(temp)
+          data.counties[index]['precincts'].push(temp);
         } else {
             county['precincts'] = [] 
-            county['precincts'].push(temp)
+            county['precincts'].push(temp);
             data.counties.push(county)
         }
 
@@ -103,9 +103,7 @@ var getResult = function(num) {
     var county;
     if (index >= 0) {
         county = result.counties[index]
-        $(".county-title").html("<h1>" + toProperCase(county.name) + " County</h1>")
-        $(".county-title").html("<div class='row'><div class='col'>Brian Kemp" + toProperCase(county.name) + 
-                                "</div><div class='col'>Stacey Abrams</div><div class='col'>Ted Metz</div></div>")
+        $(".county-title").html("<h1>" + toProperCase(county.name) + " COUNTY</h1>")
         if (county.precincts.length > 0) {
             var body = "<table id='table-results' class='table table-striped table-hover'><thead>"
             for (var h in headers) {
@@ -117,7 +115,7 @@ var getResult = function(num) {
                 body = body + "<tr>"
                 for (var h in headers) {
                     body = body + "<td>"
-                    if(headers[h].value === 'ajc_precinct') {
+                    if(headers[h].value === 'Precinct') {
                         body = body + toProperCase(county.precincts[l][headers[h].value])
 
                     } else if (headers[h].value === 'total') {
@@ -189,10 +187,15 @@ var wCommas = function(str) {
 };
 
 var toProperCase = function(str) {
-    return str.replace(/\w\S*/g, function(txt) {
-      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-    });
-}
+  if(str){
+    return str.toUpperCase();
+    //return str.replace(/\w\S*/g, function(txt) {
+      //return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    //});
+  } else {
+    return "";
+  }
+ }
 
 //On load opens csv
 $(document).ready(function() {
