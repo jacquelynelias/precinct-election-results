@@ -136,12 +136,8 @@ var getResult = function(num) {
                         body = body + toProperCase(county.precincts[l][headers[h].value])
 
                     } else if (headers[h].value === 'total') {
-                        var total = 0;
-                        for (var n in candidates) {
-                            total = total + parseInt(county.precincts[l][candidates[n]+'_votes'])
 
-                        }
-                        body = body + wCommas(total)
+                        body = body + wCommas(county.precincts[l].total)
                         
                     } else if (headers[h].value === 'votes') {
                         body = body + "<div class='dem'><div class='dem-text'><h4>"+toProperCase(candidates[0])+":</h4> <p>" + (county.precincts[l][candidates[0] +'_votes'] ? (wCommas(county.precincts[l][candidates[0] +'_votes'].split(".")[0]) + " (" + (((parseInt(county.precincts[l][candidates[0] +'_votes']))/(parseInt(county.precincts[l]['total']))*100).toFixed(1))+"%)")  : 'N/A') + "</p></div><div class='dem-rect' style='width:" + (((parseInt(county.precincts[l][candidates[0] +'_votes']))/(parseInt(county.precincts[l]['total']))*100).toFixed(1))*lineWidth+"px'></div></div>"
