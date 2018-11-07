@@ -104,6 +104,8 @@ var getResult = function(num) {
     if (index >= 0) {
         county = result.counties[index]
         $(".county-title").html("<h1>" + toProperCase(county.name) + " County</h1>")
+        $(".county-title").html("<div class='row'><div class='col'>Brian Kemp" + toProperCase(county.name) + 
+                                "</div><div class='col'>Stacey Abrams</div><div class='col'>Ted Metz</div></div>")
         if (county.precincts.length > 0) {
             var body = "<table id='table-results' class='table table-striped table-hover'><thead>"
             for (var h in headers) {
