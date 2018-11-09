@@ -11,7 +11,7 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 392,Atkinson,Axson,26,0,ATKINSON
 833,Atkinson,Pearson County,115,3,ATKINSON
 487,Atkinson,Willacoochee,245,4,ATKINSON
-163,Atkinson,Pearson City,250,2,ATKINSON
+164,Atkinson,Pearson City,251,2,ATKINSON
 3321,Bacon,Douglas,488,20,BACON
 84,Baker,Hoggard Mill,89,0,BAKER
 112,Baker,Milford,60,2,BAKER
@@ -79,9 +79,9 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 663,Bartow,WOODLAND HIGH,206,8,BARTOW
 2533,Ben_Hill,West,922,16,BEN_HILL
 1005,Ben_Hill,East,1049,8,BEN_HILL
-523,Berrien,Alapaha,170,2,BERRIEN
+523,Berrien,Alapaha,171,2,BERRIEN
 816,Berrien,Ray City,151,10,BERRIEN
-2842,Berrien,Nashville,488,19,BERRIEN
+2845,Berrien,Nashville,489,19,BERRIEN
 618,Berrien,West Berrien,34,2,BERRIEN
 512,Berrien,Enigma,55,5,BERRIEN
 554,Bibb,VINEVILLE 1,1273,28,BIBB
@@ -115,7 +115,7 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 1178,Bibb,HOWARD 7,603,16,BIBB
 762,Bibb,HOWARD 6,578,18,BIBB
 272,Bibb,VINEVILLE 2,829,11,BIBB
-3816,Bleckley,FAIRGROUND,997,42,BLECKLEY
+3816,Bleckley,FAIRGROUND,1002,42,BLECKLEY
 1536,Brantley,Waynesville,169,13,BRANTLEY
 1890,Brantley,Nahunta,194,15,BRANTLEY
 1769,Brantley,Hoboken,96,7,BRANTLEY
@@ -126,16 +126,16 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 245,Brooks,Pavo,85,2,BROOKS
 778,Brooks,Quitman,1118,7,BROOKS
 734,Brooks,Morven,314,3,BROOKS
-843,Bryan,Pembroke,408,7,BRYAN
-1059,Bryan,Black Creek,260,8,BRYAN
-1361,Bryan,J.F. Gregory Park,423,22,BRYAN
-964,Bryan,Danielsiding,310,23,BRYAN
-862,Bryan,RH Rec Complex,567,17,BRYAN
-476,Bryan,Ways Station,363,10,BRYAN
+846,Bryan,Pembroke,409,7,BRYAN
+1060,Bryan,Black Creek,260,8,BRYAN
+1362,Bryan,J.F. Gregory Park,425,22,BRYAN
+965,Bryan,Danielsiding,310,23,BRYAN
+864,Bryan,RH Rec Complex,568,17,BRYAN
+477,Bryan,Ways Station,363,10,BRYAN
 623,Bryan,Public Safety Complex,402,11,BRYAN
-1630,Bryan,HWY 144 East,725,20,BRYAN
-903,Bryan,Ellabell,198,9,BRYAN
-1770,Bryan,Keller,650,38,BRYAN
+1633,Bryan,HWY 144 East,727,20,BRYAN
+905,Bryan,Ellabell,199,9,BRYAN
+1772,Bryan,Keller,650,38,BRYAN
 851,Bulloch,Pittman Park,1478,31,BULLOCH
 2186,Bulloch,Fair,1198,32,BULLOCH
 473,Bulloch,Leefield,74,4,BULLOCH
@@ -153,7 +153,7 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 1180,Bulloch,Emit,504,22,BULLOCH
 316,Bulloch,Lockhart,122,3,BULLOCH
 107,Burke,Munnerlyn,65,1,BURKE
-802,Burke,Four Points,381,10,BURKE
+802,Burke,Four Points,383,10,BURKE
 194,Burke,Girard,225,1,BURKE
 361,Burke,Greenscut,219,0,BURKE
 1072,Burke,South Waynesboro,782,14,BURKE
@@ -327,7 +327,7 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 75,Chatham,2-05 Holy Spirit Lutheran,961,8,CHATHAM
 1223,Chatham,1-16 Ferguson Ave Baptist,429,23,CHATHAM
 252,Chatham,6-08 Savannah Commons,771,12,CHATHAM
-601,Chattahoochee,Chattahoochee Acvitity Center,493,8,CHATTAHOOCHEE
+603,Chattahoochee,Chattahoochee Acvitity Center,494,8,CHATTAHOOCHEE
 223,Chattooga,PENNVILLE,37,6,CHATTOOGA
 74,Chattooga,SEMINOLE,11,1,CHATTOOGA
 154,Chattooga,CLOUDLAND,54,3,CHATTOOGA
@@ -470,11 +470,11 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 29,Clayton,OAK 1,1154,3,CLAYTON
 156,Clayton,RIVERDALE 6,1157,7,CLAYTON
 78,Clayton,JONESBORO 8,1524,1,CLAYTON
-61,Clinch,Arabia,5,0,CLINCH
+62,Clinch,Arabia,5,0,CLINCH
 131,Clinch,Fargo,18,1,CLINCH
 153,Clinch,Argyle,27,0,CLINCH
-125,Clinch,Dupont,42,0,CLINCH
-1241,Clinch,Homerville,438,6,CLINCH
+126,Clinch,Dupont,42,0,CLINCH
+1244,Clinch,Homerville,441,6,CLINCH
 1400,Cobb,Harrison 01,568,42,COBB
 771,Cobb,Kell 01,509,39,COBB
 1422,Cobb,Lassiter 01,929,38,COBB
@@ -616,18 +616,18 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 561,Cobb,Vinings 01,1118,18,COBB
 1010,Cobb,Baker 01,1473,44,COBB
 1258,Cobb,Vinings 04,1019,28,COBB
-892,Coffee,Ambrose,195,6,COFFEE
-4979,Coffee,Douglas,2582,35,COFFEE
-965,Coffee,Broxton,307,4,COFFEE
-712,Coffee,Nicholls,189,3,COFFEE
-146,Coffee,Bridgetown,49,0,COFFEE
-501,Coffee,West Green,22,4,COFFEE
+967,Coffee,Ambrose,205,6,COFFEE
+5471,Coffee,Douglas,2825,36,COFFEE
+1045,Coffee,Broxton,320,4,COFFEE
+759,Coffee,Nicholls,196,4,COFFEE
+155,Coffee,Bridgetown,50,0,COFFEE
+523,Coffee,West Green,22,5,COFFEE
 624,Colquitt,Autreyville,131,6,COLQUITT
 581,Colquitt,Funston,86,2,COLQUITT
-292,Colquitt,Shaw,946,4,COLQUITT
-1513,Colquitt,Moultrie,822,27,COLQUITT
+292,Colquitt,Shaw,947,4,COLQUITT
+1514,Colquitt,Moultrie,824,27,COLQUITT
 109,Colquitt,Crosland,42,1,COLQUITT
-569,Colquitt,Murphy,61,4,COLQUITT
+570,Colquitt,Murphy,61,4,COLQUITT
 249,Colquitt,Tyty,14,1,COLQUITT
 244,Colquitt,Doerun,133,5,COLQUITT
 673,Colquitt,Bridgecreek,52,6,COLQUITT
@@ -639,8 +639,8 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 822,Colquitt,Hopewell,117,3,COLQUITT
 495,Colquitt,Warrior,53,2,COLQUITT
 431,Colquitt,Robinson,81,2,COLQUITT
-751,Colquitt,Monk,115,3,COLQUITT
-459,Colquitt,Lee,65,3,COLQUITT
+754,Colquitt,Monk,116,3,COLQUITT
+459,Colquitt,Lee,66,3,COLQUITT
 718,Columbia,Marvin Methodist Church,402,22,COLUMBIA
 614,Columbia,G A Apostolic Church,313,6,COLUMBIA
 584,Columbia,Warren Baptist,804,11,COLUMBIA
@@ -723,11 +723,11 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 1533,Coweta,WELCOME,364,24,COWETA
 1970,Coweta,WHITE OAK,802,52,COWETA
 161,Crawford,1A,125,4,CRAWFORD
-823,Crawford,3,143,18,CRAWFORD
-579,Crawford,2,462,2,CRAWFORD
-892,Crawford,5,106,3,CRAWFORD
+824,Crawford,3,143,18,CRAWFORD
+580,Crawford,2,464,2,CRAWFORD
+893,Crawford,5,106,3,CRAWFORD
 891,Crawford,4,101,8,CRAWFORD
-246,Crawford,1B,362,2,CRAWFORD
+246,Crawford,1B,363,2,CRAWFORD
 377,Crisp,Arabi,75,1,CRISP
 749,Crisp,Jamestown,62,3,CRISP
 2262,Crisp,Cordele,2364,18,CRISP
@@ -945,7 +945,7 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 972,DeKalb,ASHFORD DUNWOODY RD,1158,26,DEKALB
 84,DeKalb,AVONDALE HIGH,888,11,DEKALB
 44,DeKalb,SNAPFINGER ROAD NORT,1202,2,DEKALB
-255,Dodge,Jones,35,1,DODGE
+256,Dodge,Jones,35,1,DODGE
 1752,Dodge,Lee,1002,11,DODGE
 60,Dodge,Clark,2,0,DODGE
 134,Dodge,Yonker,11,0,DODGE
@@ -954,7 +954,7 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 268,Dodge,Plainfield,26,0,DODGE
 232,Dodge,Mullis,65,1,DODGE
 90,Dodge,Jaybird,42,0,DODGE
-197,Dodge,Chauncey,54,0,DODGE
+203,Dodge,Chauncey,57,0,DODGE
 128,Dodge,Vilula,5,0,DODGE
 196,Dodge,McCranie,30,1,DODGE
 466,Dodge,Eddin,195,3,DODGE
@@ -1042,17 +1042,17 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 1192,Effingham,4C,186,25,EFFINGHAM
 705,Effingham,5C,261,8,EFFINGHAM
 1346,Effingham,2A,311,21,EFFINGHAM
-756,Elbert,Goshen,170,2,ELBERT
-596,Elbert,Pike,329,5,ELBERT
-198,Elbert,Moss-Ruckersville,69,3,ELBERT
-302,Elbert,Longstreet,77,0,ELBERT
-530,Elbert,Wyche,207,3,ELBERT
-1127,Elbert,Elberton,994,8,ELBERT
-213,Elbert,Webbsboro,53,3,ELBERT
-421,Elbert,Eliam,80,5,ELBERT
-198,Elbert,Petersburg,32,2,ELBERT
+758,Elbert,Goshen,174,2,ELBERT
+605,Elbert,Pike,339,5,ELBERT
+200,Elbert,Moss-Ruckersville,71,4,ELBERT
+302,Elbert,Longstreet,81,0,ELBERT
+535,Elbert,Wyche,211,3,ELBERT
+1130,Elbert,Elberton,994,8,ELBERT
+214,Elbert,Webbsboro,53,3,ELBERT
+423,Elbert,Eliam,85,5,ELBERT
+200,Elbert,Petersburg,33,2,ELBERT
 298,Elbert,Gaines,40,4,ELBERT
-483,Elbert,Centerville,105,6,ELBERT
+487,Elbert,Centerville,113,6,ELBERT
 614,Emanuel,Twin City,333,4,EMANUEL
 171,Emanuel,Nunez,45,1,EMANUEL
 340,Emanuel,Canoochee,80,2,EMANUEL
@@ -1114,30 +1114,30 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 1272,Fayette,DOGWOOD,661,31,FAYETTE
 934,Fayette,SPRING HILL,1080,22,FAYETTE
 628,Floyd,CAVE SPRING,180,9,FLOYD
-1425,Floyd,EAST LINDALE,416,28,FLOYD
-876,Floyd,NORTH ROME,824,13,FLOYD
-657,Floyd,NORTH CAROLINA,124,9,FLOYD
-709,Floyd,GARDEN LAKES,266,9,FLOYD
-1257,Floyd,GLENWOOD,353,23,FLOYD
-216,Floyd,EVERETT SPRINGS,36,1,FLOYD
+1430,Floyd,EAST LINDALE,417,28,FLOYD
+877,Floyd,NORTH ROME,827,14,FLOYD
+659,Floyd,NORTH CAROLINA,126,9,FLOYD
+710,Floyd,GARDEN LAKES,266,9,FLOYD
+1263,Floyd,GLENWOOD,353,23,FLOYD
+217,Floyd,EVERETT SPRINGS,36,1,FLOYD
 583,Floyd,ARMUCHEE,103,6,FLOYD
-450,Floyd,TEXAS VALLEY,63,3,FLOYD
-874,Floyd,FLOYD SPRINGS,99,8,FLOYD
-1093,Floyd,WEST LINDALE,273,14,FLOYD
+456,Floyd,TEXAS VALLEY,63,3,FLOYD
+878,Floyd,FLOYD SPRINGS,100,8,FLOYD
+1094,Floyd,WEST LINDALE,273,14,FLOYD
 133,Floyd,SOUTH ROME,516,5,FLOYD
-748,Floyd,HOWELL,87,3,FLOYD
-1513,Floyd,WATTERS,238,22,FLOYD
-2215,Floyd,ETOWAH,592,19,FLOYD
+749,Floyd,HOWELL,87,3,FLOYD
+1526,Floyd,WATTERS,238,22,FLOYD
+2215,Floyd,ETOWAH,596,19,FLOYD
 466,Floyd,FOSTER'S MILL,63,5,FLOYD
-1310,Floyd,ALTO PARK,406,17,FLOYD
-1105,Floyd,MT ALTO NORTH,889,16,FLOYD
-826,Floyd,TOWN ROME,682,22,FLOYD
+1315,Floyd,ALTO PARK,406,17,FLOYD
+1109,Floyd,MT ALTO NORTH,898,16,FLOYD
+826,Floyd,TOWN ROME,683,22,FLOYD
 273,Floyd,VANNS VALLEY,81,3,FLOYD
-292,Floyd,RIVERSIDE,107,7,FLOYD
-1137,Floyd,MT ALTO SOUTH,783,25,FLOYD
+293,Floyd,RIVERSIDE,107,7,FLOYD
+1141,Floyd,MT ALTO SOUTH,789,26,FLOYD
 555,Floyd,CHULIO,109,8,FLOYD
-1038,Floyd,EAST ROME,970,35,FLOYD
-1111,Floyd,BARKERS,153,12,FLOYD
+1038,Floyd,EAST ROME,971,35,FLOYD
+1135,Floyd,BARKERS,157,12,FLOYD
 5273,Forsyth,16 Otwell,1651,113,FORSYTH
 2368,Forsyth,19 Old Atlanta,1511,43,FORSYTH
 1221,Forsyth,07 Cumming,432,21,FORSYTH
@@ -1550,7 +1550,7 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 259,Glascock,Mitchell,39,1,GLASCOCK
 454,Glascock,Mill,26,1,GLASCOCK
 394,Glascock,Gibson,35,3,GLASCOCK
-81,Glascock,Edgehill,7,0,GLASCOCK
+82,Glascock,Edgehill,7,0,GLASCOCK
 1807,Glynn,Christian Renewal,665,25,GLYNN
 101,Glynn,Burroughs,1205,3,GLYNN
 502,Glynn,Howard Coffin Park,867,12,GLYNN
@@ -1583,19 +1583,19 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 305,Gordon,OOSTANAULA,83,7,GORDON
 646,Gordon,RESACA,84,8,GORDON
 2431,Gordon,GORDON COUNTY,527,27,GORDON
-315,Grady,Spring Hill,35,2,GRADY
-235,Grady,Cairo 4th District,1015,6,GRADY
+315,Grady,Spring Hill,36,2,GRADY
+235,Grady,Cairo 4th District,1016,6,GRADY
 156,Grady,Limesink,30,0,GRADY
 1163,Grady,Woodland,164,7,GRADY
-486,Grady,Whigham,145,3,GRADY
-607,Grady,Midway,164,3,GRADY
-378,Grady,Spence,34,4,GRADY
-396,Grady,Blowing Cave,61,2,GRADY
+487,Grady,Whigham,145,3,GRADY
+609,Grady,Midway,164,3,GRADY
+381,Grady,Spence,34,4,GRADY
+396,Grady,Blowing Cave,62,2,GRADY
 338,Grady,Pine Park,164,1,GRADY
 193,Grady,Duncanville,113,1,GRADY
-326,Grady,Higdon,149,2,GRADY
-229,Grady,Ragan,77,0,GRADY
-804,Grady,Cairo 5th District,546,2,GRADY
+326,Grady,Higdon,150,2,GRADY
+229,Grady,Ragan,78,0,GRADY
+805,Grady,Cairo 5th District,548,2,GRADY
 496,Greene,Union Point,545,5,GREENE
 3808,Greene,Old Salem,821,27,GREENE
 296,Greene,Siloam,323,1,GREENE
@@ -1918,11 +1918,11 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 252,Jefferson,Stapleton,132,4,JEFFERSON
 153,Jefferson,Stapleton Crossroads,117,2,JEFFERSON
 217,Jefferson,Avera,35,0,JEFFERSON
-974,Jefferson,Louisville,1320,8,JEFFERSON
-327,Jefferson,Wadley,785,4,JEFFERSON
-177,Jefferson,Bartow,154,1,JEFFERSON
-279,Jefferson,Matthews,119,1,JEFFERSON
-796,Jefferson,Wrens,887,6,JEFFERSON
+974,Jefferson,Louisville,1321,8,JEFFERSON
+328,Jefferson,Wadley,789,4,JEFFERSON
+177,Jefferson,Bartow,155,1,JEFFERSON
+279,Jefferson,Matthews,120,1,JEFFERSON
+796,Jefferson,Wrens,889,6,JEFFERSON
 398,Jenkins,Four Points,169,2,JENKINS
 219,Jenkins,Jenkins Co,333,4,JENKINS
 529,Jenkins,Senior Citizens Bld,76,2,JENKINS
@@ -1932,13 +1932,13 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 432,Johnson,Smith,45,1,JOHNSON
 547,Johnson,Kite,27,1,JOHNSON
 1122,Johnson,Wrightsville,746,9,JOHNSON
-1358,Jones,GRAY,417,9,JONES
-701,Jones,HAWKINS,1152,9,JONES
-1171,Jones,CLINTON,329,4,JONES
+1360,Jones,GRAY,418,9,JONES
+702,Jones,HAWKINS,1153,9,JONES
+1174,Jones,CLINTON,333,4,JONES
 623,Jones,BARRON,230,4,JONES
 771,Jones,POPE,368,2,JONES
 91,Jones,SANDERS,24,1,JONES
-1251,Jones,FINNEY,410,15,JONES
+1252,Jones,FINNEY,411,15,JONES
 703,Jones,ETHRIDGE,378,5,JONES
 931,Jones,ROBERTS,476,11,JONES
 831,Jones,DAVIDSON,147,5,JONES
@@ -1991,17 +1991,17 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 689,Lincoln,Martins Crossroad,125,4,LINCOLN
 304,Lincoln,Bethany Church,59,3,LINCOLN
 760,Lincoln,Lincoln Center,216,7,LINCOLN
-197,Lincoln,Faith Temple of Linc,109,2,LINCOLN
-365,Lincoln,Tabernacle,296,3,LINCOLN
-204,Lincoln,Lincoln Club House,288,3,LINCOLN
+197,Lincoln,Faith Temple of Linc,110,2,LINCOLN
+366,Lincoln,Tabernacle,296,3,LINCOLN
+204,Lincoln,Lincoln Club House,289,3,LINCOLN
 236,Lincoln,Midway,94,3,LINCOLN
 294,Long,Faith Baptist Annex,87,3,LONG
-437,Long,North Ludowici,332,13,LONG
-374,Long,Tibet,65,5,LONG
-128,Long,Alma Flournoy,32,1,LONG
-231,Long,South Ludowici,236,4,LONG
+438,Long,North Ludowici,333,13,LONG
+376,Long,Tibet,65,5,LONG
+130,Long,Alma Flournoy,32,1,LONG
+232,Long,South Ludowici,236,4,LONG
 742,Long,Rye Patch/Oak Dale,366,6,LONG
-376,Long,Beards Creek,252,4,LONG
+379,Long,Beards Creek,252,4,LONG
 5608,Lowndes,Northside,6834,79,LOWNDES
 1553,Lowndes,Clyatt,600,14,LOWNDES
 2373,Lowndes,Hahira,521,23,LOWNDES
@@ -2031,11 +2031,11 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 569,Madison,Comer,234,7,MADISON
 467,Marion,Pineknot,40,5,MARION
 333,Marion,Ft. Perry,78,7,MARION
-635,Marion,Buena Vista,863,6,MARION
+635,Marion,Buena Vista,864,6,MARION
 238,Marion,Brantley,31,2,MARION
 199,Marion,Tazewell,23,2,MARION
 118,McDuffie,131 - Queen of Angels,498,1,MCDUFFIE
-1246,McDuffie,135 - Sweetwater,562,8,MCDUFFIE
+1247,McDuffie,135 - Sweetwater,563,8,MCDUFFIE
 894,McDuffie,133B - Dearing Gym,236,13,MCDUFFIE
 377,McDuffie,139 - Whiteoak,210,3,MCDUFFIE
 146,McDuffie,136 - Thomson Depot,821,2,MCDUFFIE
@@ -2079,16 +2079,16 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 338,Monroe,CABANISS,124,9,MONROE
 720,Monroe,MIDDLEBROOKS,131,11,MONROE
 384,Monroe,COX,95,2,MONROE
-1314,Monroe,BENTONS,304,20,MONROE
+1315,Monroe,BENTONS,304,20,MONROE
 676,Monroe,BRANTLEYS,93,10,MONROE
 245,Monroe,RUSSELLVILLE,53,0,MONROE
 480,Monroe,PROCTORS,137,6,MONROE
-240,Monroe,KELSEYS,214,4,MONROE
-1380,Monroe,BURGAYS,286,9,MONROE
-1065,Monroe,FORSYTH,1486,15,MONROE
-817,Monroe,HIGH FALLS,152,10,MONROE
-979,Monroe,EVERS,226,8,MONROE
-475,Monroe,DILLARDS,108,5,MONROE
+242,Monroe,KELSEYS,214,4,MONROE
+1381,Monroe,BURGAYS,286,9,MONROE
+1066,Monroe,FORSYTH,1487,15,MONROE
+818,Monroe,HIGH FALLS,152,10,MONROE
+981,Monroe,EVERS,226,8,MONROE
+475,Monroe,DILLARDS,109,5,MONROE
 320,Montgomery,Kibbee,24,0,MONTGOMERY
 433,Montgomery,Uvalda,142,3,MONTGOMERY
 224,Montgomery,Ailey,90,3,MONTGOMERY
@@ -2207,10 +2207,10 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 187,Pierce,Sunset/Sweat,4,0,PIERCE
 620,Pierce,Patterson,104,2,PIERCE
 341,Pierce,Mershon,19,1,PIERCE
-1474,Pierce,Hacklebarney/Cason,336,6,PIERCE
+1477,Pierce,Hacklebarney/Cason,335,6,PIERCE
 876,Pierce,St Johns/Blackshear,48,4,PIERCE
-1473,Pierce,Blackshear,155,8,PIERCE
-719,Pierce,Otter Creek,49,1,PIERCE
+1474,Pierce,Blackshear,155,8,PIERCE
+719,Pierce,Otter Creek,50,1,PIERCE
 430,Pierce,Alabaha,23,1,PIERCE
 983,Pike,Williamson,111,8,PIKE
 747,Pike,Meansville,89,5,PIKE
@@ -2240,7 +2240,7 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 49,Randolph,Fountain Bridge-5th,4,1,RANDOLPH
 72,Randolph,4th District,9,0,RANDOLPH
 226,Randolph,Carnegie,22,0,RANDOLPH
-168,Randolph,Benevolence,79,2,RANDOLPH
+169,Randolph,Benevolence,79,2,RANDOLPH
 189,Randolph,Shellman,305,1,RANDOLPH
 409,Randolph,Cuthbert/Courthouse,721,7,RANDOLPH
 78,Randolph,Coleman,70,1,RANDOLPH
@@ -2329,24 +2329,24 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 792,Rockdale,Honey Creek,709,10,ROCKDALE
 849,Rockdale,Stanton,1135,18,ROCKDALE
 671,Rockdale,St. Pius,2081,19,ROCKDALE
-1563,Schley,Precinct One,353,15,SCHLEY
+1565,Schley,Precinct One,353,15,SCHLEY
 374,Screven,Newington,220,2,SCREVEN
-252,Screven,Rocky Ford,77,2,SCREVEN
+253,Screven,Rocky Ford,77,2,SCREVEN
 107,Screven,Screven Rec Dept,123,0,SCREVEN
-395,Screven,Greenhill Church,105,2,SCREVEN
-334,Screven,Jenk Hill Fire Sta,328,2,SCREVEN
+396,Screven,Greenhill Church,105,2,SCREVEN
+335,Screven,Jenk Hill Fire Sta,330,2,SCREVEN
 196,Screven,Hunters,100,0,SCREVEN
-188,Screven,Jackson Fire Station,47,1,SCREVEN
+190,Screven,Jackson Fire Station,47,1,SCREVEN
 385,Screven,Sylvania,289,2,SCREVEN
 298,Screven,Hiltonia,257,0,SCREVEN
 474,Screven,Bay Branch,85,1,SCREVEN
 45,Screven,Cooperville Fire Sta,106,0,SCREVEN
 215,Screven,Sr Citizens Center,392,3,SCREVEN
-564,Seminole,Precinct 1,273,1,SEMINOLE
+565,Seminole,Precinct 1,274,1,SEMINOLE
 414,Seminole,Precinct 2,197,2,SEMINOLE
-76,Seminole,Precinct 3,412,4,SEMINOLE
-519,Seminole,Precinct 4,116,3,SEMINOLE
-569,Seminole,Precinct 5,56,7,SEMINOLE
+77,Seminole,Precinct 3,417,4,SEMINOLE
+521,Seminole,Precinct 4,117,3,SEMINOLE
+572,Seminole,Precinct 5,56,7,SEMINOLE
 1376,Spalding,03 SENIOR CENTER,395,31,SPALDING
 884,Spalding,09 UNION BAPTIST CHURCH,135,13,SPALDING
 705,Spalding,05 UGA CAMPUS,953,17,SPALDING
@@ -2382,9 +2382,9 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 218,Sumter,29 Andersonville,65,0,SUMTER
 198,Sumter,17 Thomson,189,3,SUMTER
 104,Talbot,TALBOTTON,436,4,TALBOT
-252,Talbot,FLINT HILL,437,5,TALBOT
+253,Talbot,FLINT HILL,438,5,TALBOT
 163,Talbot,ONEAL,212,5,TALBOT
-124,Talbot,GENEVA,176,1,TALBOT
+125,Talbot,GENEVA,176,1,TALBOT
 175,Talbot,BOX SPRINGS,106,4,TALBOT
 257,Talbot,VALLEY,228,2,TALBOT
 90,Talbot,JUNCTION CITY,169,1,TALBOT
@@ -2398,9 +2398,9 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 118,Tattnall,MANASSAS,48,0,TATTNALL
 1029,Tattnall,DISTRICT IV,408,8,TATTNALL
 662,Tattnall,COLLINS,175,6,TATTNALL
-799,Taylor,#6 REYNOLDS,513,6,TAYLOR
-1152,Taylor,#5 COURTHOUSE,181,8,TAYLOR
-104,Taylor,#1 BUTLER FIRE DEPT.,497,5,TAYLOR
+800,Taylor,#6 REYNOLDS,513,6,TAYLOR
+1162,Taylor,#5 COURTHOUSE,183,8,TAYLOR
+107,Taylor,#1 BUTLER FIRE DEPT.,509,6,TAYLOR
 387,Telfair,Helena,166,2,TELFAIR
 166,Telfair,Scotland,37,2,TELFAIR
 759,Telfair,McRae,573,10,TELFAIR
@@ -2413,7 +2413,7 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 388,Terrell,Dawson,1293,6,TERRELL
 575,Terrell,Sasser,267,3,TERRELL
 108,Terrell,Herod-Dover,75,0,TERRELL
-186,Thomas,Douglass,960,2,THOMAS
+187,Thomas,Douglass,960,2,THOMAS
 146,Thomas,Metcalfe,49,1,THOMAS
 413,Thomas,Coolidge,127,2,THOMAS
 1007,Thomas,Gatlin Creek,265,10,THOMAS
@@ -2426,8 +2426,8 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 61,Thomas,Resource Center,695,0,THOMAS
 243,Thomas,Meigs,185,2,THOMAS
 995,Thomas,Scott,540,11,THOMAS
-947,Thomas,New Covenant,273,6,THOMAS
-807,Thomas,Jerger,421,11,THOMAS
+949,Thomas,New Covenant,273,6,THOMAS
+807,Thomas,Jerger,425,11,THOMAS
 1312,Thomas,Central,586,10,THOMAS
 213,Thomas,Patten,39,1,THOMAS
 541,Thomas,Ellabelle,120,2,THOMAS
@@ -2445,15 +2445,15 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 320,Tift,Omega,88,3,TIFT
 772,Tift,Brookfield,114,4,TIFT
 1342,Tift,Brighton,208,9,TIFT
-1396,Toombs,15361 Lyons,454,6,TOOMBS
-782,Toombs,39 New Branch,83,4,TOOMBS
-2356,Toombs,513 V.P.D.,899,17,TOOMBS
-1302,Toombs,514 S.T.I.A.L.C,707,7,TOOMBS
-781,Toombs,43 Cedar Crossing,53,2,TOOMBS
+1397,Toombs,15361 Lyons,456,6,TOOMBS
+782,Toombs,39 New Branch,84,4,TOOMBS
+2357,Toombs,513 V.P.D.,899,17,TOOMBS
+1304,Toombs,514 S.T.I.A.L.C,708,7,TOOMBS
+782,Toombs,43 Cedar Crossing,53,2,TOOMBS
 23,Towns,Tate City,8,0,TOWNS
 1473,Towns,Young Harris,394,19,TOWNS
 1798,Towns,Macedonia,310,18,TOWNS
-1715,Towns,Hiawassee,352,21,TOWNS
+1715,Towns,Hiawassee,353,21,TOWNS
 686,Treutlen,Soperton,695,7,TREUTLEN
 1114,Treutlen,Annex,111,1,TREUTLEN
 322,Troup,WEST POINT,687,6,TROUP
@@ -2471,9 +2471,9 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 1409,Troup,LONG CANE,468,13,TROUP
 48,Troup,GRIGGS CENTER,1044,1,TROUP
 777,Troup,GRAY HILL,276,3,TROUP
-917,Turner,Ashburn,1057,10,TURNER
-890,Turner,Sycamore,109,2,TURNER
-250,Turner,Rebecca,28,0,TURNER
+919,Turner,Ashburn,1062,10,TURNER
+891,Turner,Sycamore,110,2,TURNER
+252,Turner,Rebecca,28,0,TURNER
 627,Twiggs,DRY BRANCH,161,8,TWIGGS
 369,Twiggs,HIGGSVILLE,119,2,TWIGGS
 353,Twiggs,JEFFERSONVILLE/WARE,611,2,TWIGGS
@@ -2481,10 +2481,10 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 399,Twiggs,GOLDEN ISLES,606,5,TWIGGS
 764,Union,Dooley,194,13,UNION
 309,Union,Suches,63,4,UNION
-734,Union,Choestoe,132,7,UNION
+735,Union,Choestoe,132,7,UNION
 1040,Union,Jones Creek,183,15,UNION
 1205,Union,Coosa,173,11,UNION
-1086,Union,Gumlog,165,11,UNION
+1087,Union,Gumlog,165,11,UNION
 1113,Union,Pat Colwell,229,5,UNION
 1185,Union,Blairsville,241,15,UNION
 1028,Union,Ivy Log,179,15,UNION
@@ -2547,16 +2547,16 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 200,Washington,OCONEE,168,2,WASHINGTON
 294,Washington,DAVISBORO,219,4,WASHINGTON
 427,Washington,HARRISON,227,2,WASHINGTON
-744,Wayne,Odum,63,3,WAYNE
-584,Wayne,Gardi,52,2,WAYNE
-1064,Wayne,Altamaha,253,12,WAYNE
+745,Wayne,Odum,63,3,WAYNE
+584,Wayne,Gardi,53,2,WAYNE
+1064,Wayne,Altamaha,254,12,WAYNE
 678,Wayne,Madray Springs,39,2,WAYNE
-930,Wayne,Oglethorpe,106,7,WAYNE
-832,Wayne,Rec Center,182,13,WAYNE
-330,Wayne,Pine Street,242,4,WAYNE
-833,Wayne,Unity,269,10,WAYNE
-444,Wayne,Red Hill,92,3,WAYNE
-956,Wayne,Screven,167,7,WAYNE
+931,Wayne,Oglethorpe,106,7,WAYNE
+833,Wayne,Rec Center,182,13,WAYNE
+330,Wayne,Pine Street,242,5,WAYNE
+834,Wayne,Unity,269,10,WAYNE
+445,Wayne,Red Hill,92,3,WAYNE
+959,Wayne,Screven,168,7,WAYNE
 97,Wayne,VFW,437,1,WAYNE
 620,Wayne,Empire,35,6,WAYNE
 659,Webster,Preston 1,440,1,WEBSTER
@@ -2567,12 +2567,12 @@ kemp_votes,County,Precinct,abrams_votes,metz_votes,county
 1517,White,Mossy Creek,150,14,WHITE
 431,White,Blue Ridge,62,6,WHITE
 175,White,Robertstown,46,3,WHITE
-2021,White,Mt. Yonah,376,19,WHITE
+2022,White,Mt. Yonah,376,19,WHITE
 782,White,Town Creek,121,13,WHITE
 269,White,Helen,82,6,WHITE
-895,White,White Creek,72,8,WHITE
-1108,White,Shoal Creek,124,19,WHITE
-1168,White,Blue Creek,236,19,WHITE
+896,White,White Creek,72,8,WHITE
+1112,White,Shoal Creek,124,19,WHITE
+1171,White,Blue Creek,236,19,WHITE
 1266,Whitfield,DG,474,19,WHITFIELD
 457,Whitfield,1A,481,13,WHITFIELD
 1174,Whitfield,WS,292,13,WHITFIELD
